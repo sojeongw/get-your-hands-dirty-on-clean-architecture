@@ -1,12 +1,8 @@
 # Example Implementation of a Hexagonal Architecture
 
-[![CI](https://github.com/thombergs/buckpal/actions/workflows/ci.yml/badge.svg)](https://github.com/thombergs/buckpal/actions/workflows/ci.yml)
+[만들면서 배우는 클린 아키텍처](https://wikibook.co.kr/clean-architecture/)
 
-[![Get Your Hands Dirty On Clean Architecture](https://reflectoring.io/assets/img/get-your-hands-dirty-260x336.png)](https://reflectoring.io/book)
-
-This is the companion code to my eBook [Get Your Hands Dirty on Clean Architecture](https://leanpub.com/get-your-hands-dirty-on-clean-architecture).
-
-It implements a domain-centric "Hexagonal" approach of a common web application with Java and Spring Boot. 
+자바 코드로 구현하는 클린 웹 애플리케이션 구현 예제
 
 ## Companion Articles
 
