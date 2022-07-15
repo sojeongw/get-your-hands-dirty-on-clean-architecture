@@ -10,7 +10,7 @@ public class Money {
         return null;
     }
 
-    public boolean isPositive()
+    public boolean isPositive() {
         return false;
     }
 }
