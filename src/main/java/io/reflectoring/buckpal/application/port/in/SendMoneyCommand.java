@@ -4,11 +4,8 @@ import io.reflectoring.buckpal.domain.AccountId;
 import io.reflectoring.buckpal.domain.Money;
 import io.reflectoring.buckpal.shared.SelfValidating;
 import lombok.Getter;
-import lombok.NonNull;
 
 import javax.validation.constraints.NotNull;
-
-import static java.util.Objects.requireNonNull;
 
 @Getter
 public class SendMoneyCommand extends SelfValidating<SendMoneyCommand> {

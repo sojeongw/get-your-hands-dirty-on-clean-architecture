@@ -19,6 +19,7 @@ public class Account {
     }
 
     public boolean withdraw(Money money, AccountId targetAccountId) {
+        // 비즈니스 규칙은 도메인 엔티티 안에 넣는다.
         if (!mayWithdraw(money)) {
             return false;
         }
