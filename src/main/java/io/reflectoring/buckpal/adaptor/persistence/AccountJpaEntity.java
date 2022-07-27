@@ -1,4 +1,4 @@
-package io.reflectoring.buckpal.persistence;
+package io.reflectoring.buckpal.adaptor.persistence;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
