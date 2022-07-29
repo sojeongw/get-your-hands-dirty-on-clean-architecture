@@ -1,8 +1,9 @@
-package io.reflectoring.buckpal.application.port.in;
+package io.reflectoring.buckpal.account.application.port.in;
 
-import io.reflectoring.buckpal.domain.AccountId;
-import io.reflectoring.buckpal.domain.Money;
+import io.reflectoring.buckpal.account.domain.Money;
 import io.reflectoring.buckpal.shared.SelfValidating;
+import io.reflectoring.buckpal.account.domain.Account.AccountId;
+
 import lombok.Getter;
 
 import javax.validation.constraints.NotNull;

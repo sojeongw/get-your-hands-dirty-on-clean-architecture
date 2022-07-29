@@ -1,9 +1,9 @@
-package io.reflectoring.buckpal.application.service;
+package io.reflectoring.buckpal.account.application.service;
 
-import io.reflectoring.buckpal.application.port.in.GetAccountBalanceQuery;
-import io.reflectoring.buckpal.application.port.out.LoadAccountPort;
-import io.reflectoring.buckpal.domain.AccountId;
-import io.reflectoring.buckpal.domain.Money;
+import io.reflectoring.buckpal.account.application.port.in.GetAccountBalanceQuery;
+import io.reflectoring.buckpal.account.application.port.out.LoadAccountPort;
+import io.reflectoring.buckpal.account.domain.Account.AccountId;
+import io.reflectoring.buckpal.account.domain.Money;
 import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDateTime;

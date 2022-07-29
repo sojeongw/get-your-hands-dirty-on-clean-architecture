@@ -1,8 +1,10 @@
-package io.reflectoring.buckpal.domain;
+package io.reflectoring.buckpal.account.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Value;
+
 import java.time.LocalDateTime;
 
 
@@ -57,15 +59,22 @@ public class Account {
         return Money.add(
                         this.calculateBalance(),
                         money.negate())
-                .isPositive();
+                .isPositiveOrZero();
     }
 
     public boolean deposit(Money money, AccountId sourceAccountId) {
         Activity deposit = new Activity(
-                this.id, sourceAccountId, this.id, LocalDateTime.now(), money
-        );
-
+                this.id,
+                sourceAccountId,
+                this.id,
+                LocalDateTime.now(),
+                money);
         this.activityWindow.addActivity(deposit);
         return true;
+    }
+
+    @Value
+    public static class AccountId {
+        private Long value;
     }
 }

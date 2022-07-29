@@ -8,9 +8,4 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 class BuckPalApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
 }
