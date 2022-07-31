@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Value;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
@@ -33,6 +34,10 @@ public class Account {
 
     public static Account withId(AccountId accountId, Money baselineBalance, ActivityWindow activityWindow) {
         return new Account(accountId, baselineBalance, activityWindow);
+    }
+
+    public Optional<AccountId> getId(){
+        return Optional.ofNullable(this.id);
     }
 
     // 계좌 잔고 확인 등 유효성 검증을 모든 상태 변경 메서드에서 하므로 유효하지 않은 도메인 모델을 생성할 수 없다.
