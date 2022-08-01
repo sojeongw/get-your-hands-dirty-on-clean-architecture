@@ -4,11 +4,13 @@ import io.reflectoring.buckpal.account.domain.Money;
 import io.reflectoring.buckpal.shared.SelfValidating;
 import io.reflectoring.buckpal.account.domain.Account.AccountId;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import javax.validation.constraints.NotNull;
 
 @Getter
+@EqualsAndHashCode(callSuper = false)
 public class SendMoneyCommand extends SelfValidating<SendMoneyCommand> {
 
     @NotNull

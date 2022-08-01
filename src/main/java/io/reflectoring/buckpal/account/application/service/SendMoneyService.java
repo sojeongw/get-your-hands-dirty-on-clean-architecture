@@ -22,7 +22,6 @@ public class SendMoneyService implements SendMoneyUseCase {
 
     @Override
     public boolean sendMoney(SendMoneyCommand command) {
-
         checkThreshold(command);
 
         LocalDateTime baselineDate = LocalDateTime.now().minusDays(10);
