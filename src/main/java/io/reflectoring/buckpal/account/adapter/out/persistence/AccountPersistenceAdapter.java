@@ -1,4 +1,4 @@
-package io.reflectoring.buckpal.account.adaptor.out.persistence;
+package io.reflectoring.buckpal.account.adapter.out.persistence;
 
 import io.reflectoring.buckpal.account.application.port.out.LoadAccountPort;
 import io.reflectoring.buckpal.account.application.port.out.UpdateAccountStatePort;

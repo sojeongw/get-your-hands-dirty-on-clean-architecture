@@ -1,4 +1,4 @@
-package io.reflectoring.buckpal.account.adaptor.in.web;
+package io.reflectoring.buckpal.account.adapter.in.web;
 
 import io.reflectoring.buckpal.account.application.port.in.SendMoneyCommand;
 import io.reflectoring.buckpal.account.application.port.in.SendMoneyUseCase;

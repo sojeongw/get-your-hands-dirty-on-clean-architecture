@@ -1,4 +1,4 @@
-package io.reflectoring.buckpal.account.adaptor.out.persistence;
+package io.reflectoring.buckpal.account.adapter.out.persistence;
 
 import io.reflectoring.buckpal.account.domain.Account;
 import io.reflectoring.buckpal.account.domain.Activity;
