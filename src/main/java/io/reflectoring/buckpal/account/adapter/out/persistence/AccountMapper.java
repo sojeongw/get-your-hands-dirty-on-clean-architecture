@@ -5,11 +5,13 @@ import io.reflectoring.buckpal.account.domain.Activity;
 import io.reflectoring.buckpal.account.domain.ActivityWindow;
 import io.reflectoring.buckpal.account.domain.Money;
 import io.reflectoring.buckpal.account.domain.Account.AccountId;
+import org.springframework.stereotype.Component;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class AccountMapper {
 
     Account mapToDomainEntity(

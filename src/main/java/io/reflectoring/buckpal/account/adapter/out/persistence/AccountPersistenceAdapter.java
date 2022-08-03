@@ -5,15 +5,15 @@ import io.reflectoring.buckpal.account.application.port.out.UpdateAccountStatePo
 import io.reflectoring.buckpal.account.domain.Account;
 import io.reflectoring.buckpal.account.domain.Account.AccountId;
 import io.reflectoring.buckpal.account.domain.Activity;
+import io.reflectoring.buckpal.shared.PersistenceAdapter;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.util.List;
 
 @RequiredArgsConstructor
-@Component
+@PersistenceAdapter
 public class AccountPersistenceAdapter implements LoadAccountPort, UpdateAccountStatePort {
 
     private final SpringDataAccountRepository accountRepository;
